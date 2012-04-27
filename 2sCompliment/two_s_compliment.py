@@ -106,7 +106,7 @@ def main2():
 		
 
 #main2()
-main('input01.txt')
+#main('input01.txt')
 
 
 
@@ -114,6 +114,17 @@ main('input01.txt')
 a = -594326116
 b = -242747090
 #print count_ones_smart(a, b)
+
+total = 0
+for i in range(0, 33):
+	a = map(str,decimal_to_binary(i))
+	total += a.count('1')
+	print "{0:2d}: {1} ones:{2}".format(i, ''.join(a), a.count('1'))
+print 'total 1s: ', total
+
+def smart(n):
+	if n == 0
+	return smart(n/2) * 2
 
 
 
